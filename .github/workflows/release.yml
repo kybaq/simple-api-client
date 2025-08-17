@@ -36,15 +36,15 @@ jobs:
       - name: Package app
         run: npm run dist -- --dir
 
-      - name: List dist folder
-        run: ls dist
+      - name: List release directory
+        run: ls -l release
 
       - name: Upload Release Artifacts
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            dist/*.exe
-            dist/*.AppImage
-            dist/*.dmg
+            release/*.exe
+            release/*.AppImage
+            release/*.dmg
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
