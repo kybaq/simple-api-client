@@ -37,7 +37,7 @@ jobs:
         run: npm run dist
 
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_ACITONS }}
 
       - name: List release directory
         run: ls -l release
@@ -50,4 +50,4 @@ jobs:
             release/*.AppImage
             release/*.dmg
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_ACITONS }}
