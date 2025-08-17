@@ -34,7 +34,7 @@ jobs:
           npm run build:electron
 
       - name: Package app
-        run: npm run dist -- --dir
+        run: npm run dist
 
       - name: List release directory
         run: ls -l release
