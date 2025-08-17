@@ -1,0 +1,133 @@
+/* src/components/RestClient/rest-client.css */
+.rest-client {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  height: 100%;
+}
+
+.request-section {
+  background-color: #252526;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #3e3e42;
+}
+
+.request-line {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.method-select {
+  background-color: #3c3c3c;
+  border: 1px solid #464647;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  min-width: 100px;
+}
+
+.url-input {
+  flex: 1;
+  background-color: #3c3c3c;
+  border: 1px solid #464647;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.send-button {
+  background-color: #007acc;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.send-button:hover:not(:disabled) {
+  background-color: #005a9e;
+}
+
+.send-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.headers-input,
+.body-input {
+  width: 100%;
+  background-color: #1e1e1e;
+  border: 1px solid #464647;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.response-section {
+  background-color: #252526;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #3e3e42;
+}
+
+.response-section h3 {
+  margin: 0 0 1rem 0;
+}
+
+.response-output {
+  background-color: #1e1e1e;
+  border: 1px solid #464647;
+  padding: 1rem;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  height: calc(100% - 3rem);
+  overflow-y: auto;
+  margin: 0;
+}
+
+.request-info {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: #2d2d30;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+.request-info small {
+  color: #cccccc;
+  font-size: 12px;
+}
+
+/* 작은 버튼 (토글용) */
+.btn-small {
+  padding: 4px 8px;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+/* 토글 영역 */
+.toggle-group {
+  margin-bottom: 12px;
+}
+
+.input-group {
+  margin-top: 6px;
+}

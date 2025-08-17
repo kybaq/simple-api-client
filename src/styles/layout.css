@@ -1,0 +1,74 @@
+/* src/styles/layout.css */
+
+/* 메인 카드형 레이아웃 */
+.api-client-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #3e3e42;
+  border-radius: 6px;
+}
+
+/* 헤더 (상단 도구 영역) */
+.api-client-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 1px solid #3e3e42;
+  background-color: #2d2d30;
+}
+
+.api-client-header input,
+.api-client-footer input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #252526;
+  color: #fff;
+  font-size: 14px;
+}
+
+.api-client-header button,
+.api-client-footer button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007acc;
+  color: #fff;
+}
+
+.api-client-header button:hover,
+.api-client-footer button:hover {
+  background-color: #005a9e;
+}
+
+.api-client-header button.danger {
+  background-color: #cc4a4a;
+}
+.api-client-header button.danger:hover {
+  background-color: #a83232;
+}
+
+/* 본문 (메시지/응답 영역) */
+.api-client-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  background-color: #1e1e1e;
+}
+
+/* 푸터 (입력 + 전송 버튼) */
+.api-client-footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  border-top: 1px solid #3e3e42;
+  background-color: #2d2d30;
+}

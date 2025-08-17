@@ -1,0 +1,57 @@
+/* src/App.css */
+.app {
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header {
+  background-color: #2d2d30;
+  padding: 1rem;
+  border-bottom: 1px solid #3e3e42;
+}
+
+.app-header h1 {
+  margin: 0 0 1rem 0;
+  color: #fff;
+}
+
+.tab-navigation {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab-navigation button {
+  padding: 0.5rem 1rem;
+  background-color: #3c3c3c;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.tab-navigation button:hover {
+  background-color: #4c4c4c;
+}
+
+.tab-navigation button.active {
+  background-color: #007acc;
+}
+
+.app-main {
+  padding: 1rem;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

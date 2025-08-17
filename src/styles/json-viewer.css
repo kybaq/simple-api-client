@@ -1,0 +1,33 @@
+/* src/styles/json-viewer.css */
+.json-viewer {
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  color: #ddd;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  border: 1px solid #444;
+}
+
+.json-key {
+  color: #4fc3f7; /* sky blue */
+}
+
+.json-string {
+  color: #81c784; /* green */
+}
+
+.json-number {
+  color: #ffd54f; /* amber */
+}
+
+.json-boolean {
+  color: #9575cd; /* indigo */
+}
+
+.json-null {
+  color: #e57373; /* red */
+}

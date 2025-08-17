@@ -1,0 +1,65 @@
+/* src/styles/common-controls.css */
+
+/* 공통 버튼 */
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+/* 버튼 타입 */
+.btn-primary {
+  background-color: #007acc;
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background-color: #005a9e;
+}
+.btn-danger {
+  background-color: #cc4a4a;
+  color: #ffffff;
+}
+.btn-danger:hover {
+  background-color: #a83232;
+}
+.btn-disabled {
+  background-color: #666;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* 공통 인풋 */
+.input {
+  padding: 8px 12px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #252526;
+  color: #eee;
+  font-size: 14px;
+}
+
+/* 공통 셀렉트 */
+.select {
+  padding: 8px 12px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #3c3c3c;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* 공통 텍스트에리어 */
+.textarea {
+  width: 100%;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: #252526;
+  color: #eee;
+  resize: vertical;
+}

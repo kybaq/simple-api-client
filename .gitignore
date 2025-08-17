@@ -1,0 +1,51 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dist / Build outputs
+dist/
+dist-electron/
+out/
+release/
+
+# Electron builder outputs
+*.exe
+*.dmg
+*.AppImage
+*.snap
+*.deb
+*.rpm
+*.msi
+*.zip
+
+# Keep build resources (icons etc.), but ignore build outputs like artifacts
+# build/ 폴더는 리소스 아이콘 등을 포함해야 하므로 제외하지 않음
+# 대신 build 안에 생길 수 있는 중간 산출물이 있다면 구체적으로 ignore 처리
+# (예: build/*.log 같은 것들만 무시)
+
+# Debug / Logs
+*.log
+logs/
+debug.log
+*.pid
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Coverage / Testing
+coverage/

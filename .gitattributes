@@ -1,0 +1,37 @@
+# 기본적으로 텍스트 파일은 LF로 규칙統一
+* text=auto eol=lf
+
+# Windows 배포 스크립트나 BAT 파일은 CRLF 유지
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# PowerShell 스크립트도 CRLF
+*.ps1 text eol=crlf
+
+# 코드/구성 파일은 LF 고정
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+
+# 이진 파일은 그대로 저장 (줄바꿈 변환 X)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.exe binary
+*.dmg binary
+*.AppImage binary
+*.zip binary
+*.gz binary
+*.tgz binary
+*.mp4 binary
+*.mp3 binary

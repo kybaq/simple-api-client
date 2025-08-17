@@ -1,0 +1,9 @@
+// tsconfig.electron.json
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist-electron",
+    "noEmit": false
+  },
+  "include": ["electron/**/*"]
+}

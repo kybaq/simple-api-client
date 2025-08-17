@@ -1,0 +1,44 @@
+name: Build & Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*' # ex) v0.1.0
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build (Vite & Electron)
+        run: |
+          npm run build:web
+          npm run build:electron
+
+      - name: Package app
+        run: npm run dist -- --dir # --dir = 배포용 아티팩트 생성, 설치하지 않음
+
+      - name: Upload Release Artifacts
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            dist/*.exe
+            dist/*.AppImage
+            dist/*.dmg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
