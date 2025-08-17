@@ -2,10 +2,11 @@ name: Build & Release
 
 on:
   push:
-    branches:
-      - main
     tags:
       - 'v*.*.*' # ex) v0.1.0
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -13,7 +14,6 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]
-        # os: [ubuntu-latest, windows-latest, macos-latest]
 
     steps:
       - name: Checkout source
@@ -34,7 +34,10 @@ jobs:
           npm run build:electron
 
       - name: Package app
-        run: npm run dist -- --dir # --dir = 배포용 아티팩트 생성, 설치하지 않음
+        run: npm run dist -- --dir
+
+      - name: List dist folder
+        run: ls dist
 
       - name: Upload Release Artifacts
         uses: softprops/action-gh-release@v1
