@@ -1,12 +1,12 @@
 {
-  "name": "api-client",
+  "name": "simple-api-client",
   "description": "A desktop API Client application built with Vite + React + Electron.",
-  "version": "0.1.0",
+  "version": "0.2.4",
   "author": {
     "name": "Kybaq",
     "email": "flfsk12@gmail.com"
   },
-  "homepage": "https://github.com/kybaq/api-client",
+  "homepage": "https://github.com/kybaq/simple-api-client",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -59,7 +59,7 @@
       {
         "provider": "github",
         "owner": "kybaq",
-        "repo": "api-client"
+        "repo": "simple-api-client"
       }
     ]
   },
