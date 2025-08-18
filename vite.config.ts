@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
+  base: './', // electron 빌드 시, asset 경로 지정을 위해 설정함
   plugins: [react()],
   resolve: {
     alias: {

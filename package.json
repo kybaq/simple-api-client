@@ -1,7 +1,7 @@
 {
   "name": "simple-api-client",
   "description": "A desktop API Client application built with Vite + React + Electron.",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "author": {
     "name": "Kybaq",
     "email": "flfsk12@gmail.com"
@@ -24,7 +24,7 @@
   },
   "build": {
     "appId": "com.example.apiclient",
-    "productName": "API Client",
+    "productName": "simple-api-client",
     "directories": {
       "buildResources": "build",
       "output": "release"
